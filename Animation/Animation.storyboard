@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="screen-1-VC">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+<!--Screen 1-->
+        <scene sceneID="screen-1-Scene">
+            <objects>
+                <viewController restorationIdentifier="screen1" storyboardIdentifier="screen1" id="screen-1-VC" userLabel="Screen 1" sceneMemberID="viewController" customClass="APScreen1" customModuleProvider="target">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="screen-1-Top"/>
+                        <viewControllerLayoutGuide type="bottom" id="screen-1-Bottom"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="screen-1" >
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+        <subviews>
+    <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES"  contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Label-1" userLabel="Label: Text"   textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" horizontalHuggingPriority="251" verticalHuggingPriority="251" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" >
+        <string key="text">Text</string>
+        <rect key="frame" x="88" y="125" width="200" height="40"/>
+        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0" colorSpace="calibratedRGB"/>
+        <userDefinedRuntimeAttributes>
+            <userDefinedRuntimeAttribute type="number" keyPath="letterSpacing">
+                <real key="value" value="0"/>
+            </userDefinedRuntimeAttribute>
+            <userDefinedRuntimeAttribute type="number" keyPath="lineHeight">
+                <real key="value" value="0"/>
+            </userDefinedRuntimeAttribute>
+            <userDefinedRuntimeAttribute type="number" keyPath="paragraphSpacing">
+                <real key="value" value="0"/>
+            </userDefinedRuntimeAttribute>
+        </userDefinedRuntimeAttributes>
+                                <connections>
+                                <gestureRecognizers/>
+                                    <outletCollection property="gestureRecognizers" destination="screen-1-label1Tap-GR" appends="YES" id="Label-1-label1Tap-GR-V-CON"/>
+                                </connections>
+        <fontDescription key="fontDescription" pointSize="12" type="system" />
+        <color key="textColor" red="0" green="0" blue="0" alpha="1" colorSpace="calibratedRGB"/>
+        <nil key="highlightedColor"/>
+        <constraints>
+        </constraints>
+    </label>
+        </subviews>
+        <constraints>
+            <constraint secondAttribute="centerX" secondItem="screen-1" firstItem="Label-1" firstAttribute="centerX" constant="0.5" priority="987" id="Label-1-centerHorizontally" userLabel="Label: Text-centerX"/>
+            <constraint firstItem="Label-1" firstAttribute="width" constant="200" priority="971" id="Label-1-width" userLabel="Label: Text-width"/>
+            <constraint firstItem="Label-1" firstAttribute="height" constant="40" priority="972" id="Label-1-height" userLabel="Label: Text-height"/>
+            <constraint secondAttribute="top" secondItem="screen-1" firstItem="Label-1" firstAttribute="top" constant="125" priority="973" id="Label-1-top" userLabel="Label: Text-top"/>
+        </constraints>
+                                <connections>
+                                </connections>
+</view>
+                    <userDefinedRuntimeAttributes>
+                    <userDefinedRuntimeAttribute type="boolean" keyPath="hidesNavBar" value="YES"/>
+                    <userDefinedRuntimeAttribute type="boolean" keyPath="hidesStatusBar" value="NO"/>
+                    <userDefinedRuntimeAttribute type="boolean" keyPath="lightStatusBar" value="NO"/>
+                    </userDefinedRuntimeAttributes>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
+                    <connections>
+                        <outlet property="label1" destination="Label-1" id="label1-screen-1-Prop"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="screen-1-FR" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="screen-1-label1Tap-GR" userLabel="label1Tap">
+                    <connections>
+                        <action selector="label1TapWithSender:" destination="screen-1-VC" id="screen-1-label1Tap-CON-VC"/>
+                        
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="0" y="0"/>
+        </scene>
+    </scenes>
+    
+</document>
